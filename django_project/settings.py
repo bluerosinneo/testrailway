@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    'books.apps.BooksConfig'
+    'rest_framework',
+    'books.apps.BooksConfig',
+    'apis.apps.ApisConfig'
 ]
 
 MIDDLEWARE = [
