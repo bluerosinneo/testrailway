@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-+$y#^7gom^b(cr8$5=x-l#@uubi6*-fy7xn!(th^4f-t^@2scy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['testrailway-production-2f84.up.railway.app']
+ALLOWED_HOSTS = ['testrailway-production-2f84.up.railway.app',
+                 'http://127.0.0.1:8000/', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'books.apps.BooksConfig'
 ]
 
 MIDDLEWARE = [
